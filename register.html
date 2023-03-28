@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Register - Sala de Juegos</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="custom.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="login.html">Log In</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Register</h1>
+    <form id="register-form" action="/register" method="post">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <label for="avatar">Avatar:</label>
+      <select id="avatar" name="avatar">
+        <option value="avatar1.png">Avatar 1</option>
+        <option value="avatar2.png">Avatar 2</option>
+        <option value="avatar3.png">Avatar 3</option>
+      </select>
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
